@@ -32,7 +32,9 @@ zstyle ':prezto:load' pmodule \
   'spectrum' \
   'utility' \
   'completion' \
-  'prompt'
+  'prompt' \
+  'git' \
+  'python'
 
 #
 # Editor
@@ -63,7 +65,7 @@ zstyle ':prezto:module:editor' key-bindings 'emacs'
 #
 
 # Set the query found color.
-# zstyle ':prezto:module:history-substring-search:color' found ''
+zstyle ':prezto:module:history-substring-search:color' found ''
 
 # Set the query not found color.
 # zstyle ':prezto:module:history-substring-search:color' not-found ''
@@ -125,17 +127,17 @@ zstyle ':prezto:module:prompt' theme 'sorin'
 #   'root'
 #
 # Set syntax highlighting styles.
-# zstyle ':prezto:module:syntax-highlighting' styles \
-#   'builtin' 'bg=blue' \
-#   'command' 'bg=blue' \
-#   'function' 'bg=blue'
+zstyle ':prezto:module:syntax-highlighting' styles \
+  'builtin' 'bg=blue' \
+  'command' 'bg=blue' \
+  'function' 'bg=blue'
 
 #
 # Terminal
 #
 
 # Auto set the tab and window titles.
-# zstyle ':prezto:module:terminal' auto-title 'yes'
+zstyle ':prezto:module:terminal' auto-title 'yes'
 
 # Set the window title format.
 # zstyle ':prezto:module:terminal:window-title' format '%n@%m: %s'

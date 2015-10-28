@@ -34,6 +34,11 @@ if (( ! $+commands[python] && ! $+commands[pyenv] )); then
   return 1
 fi
 
+# Load pyenv virtualenv
+if (( $+commands[pyenv-virtualenv-init] )); then
+    eval "$(pyenv virtualenv-init -)"
+fi
+
 # Load virtualenvwrapper into the shell session.
 if (( $+commands[virtualenvwrapper.sh] )); then
   # Set the directory where virtual environments are stored.
