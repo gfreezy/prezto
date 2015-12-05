@@ -44,9 +44,7 @@ typeset -gU cdpath fpath mailpath path
 # Set the list of directories that Zsh searches for programs.
 path=(
   /usr/local/{bin,sbin}
-  /usr/local/opt/go/libexec/bin
   $path
-  ~/Develop/sa/client/commands
 )
 
 #
@@ -76,11 +74,3 @@ fi
 TMPPREFIX="${TMPDIR%/}/zsh"
 
 # Customization
-export DYLD_LIBRARY_PATH=$DYLD_LIBRARY_PATH:/Applications/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/
-export OPENSSL_LIB_DIR=/usr/local/opt/openssl/lib
-export OPENSSL_INCLUDE_DIR=/usr/local/opt/openssl/include
-export GOPATH=~/Develop/golang
-
-# alias
-alias gst="git status"
-alias gco="git checkout"
