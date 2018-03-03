@@ -11,3 +11,7 @@ if [[ -s "${ZDOTDIR:-$HOME}/.zprezto/init.zsh" ]]; then
 fi
 
 # Customize to your needs...
+function gi() { curl -L -s https://www.gitignore.io/api/$@ ;}
+
+# added by travis gem
+[ -f /Users/chaofei/.travis/travis.sh ] && source /Users/chaofei/.travis/travis.sh
